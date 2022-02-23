@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    background-color: black;
     display: flex;
     width: 100%;
     height: calc(100vh - 10vh);
@@ -154,6 +155,8 @@ header{
 }
 /* HEADER */
 
+
+
 /* MAIN */
 main{
     background-color: rgba(20,25,34,255);
@@ -199,6 +202,51 @@ main{
     margin: 10px 15px;
     text-align: center;
 }
+.effetto{
+    position: relative;
+}
+.cover{
+    
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 4px;
+    z-index: 1;
+    display: none;
+    
+}
+.effetto-2{
+    position: relative;;
+    
+}
+.cover-2{
+    
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 4px;
+    display: none;
+    border-radius: 50%;
+}
+.cerchio{
+    width: 60px;
+    height: 60px;
+    border: 4px solid white;
+    border-radius: 50%;
+    line-height:55px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
 .card img{
     width: 100%;
 }
@@ -218,9 +266,16 @@ main{
     display: inline-block;
     padding-top: 10px;
 }
+
 .tondo img{
     border-radius: 50%;
 }
+/* MAIN */
+
+
+
+
+/* FOOTER */
 footer{
     width: 100%;
     height: 10vh;
@@ -351,3 +406,4 @@ input[type='range'] {
     color: white;
     font-size: 0.6em;
 }
+/* FOOTER */
