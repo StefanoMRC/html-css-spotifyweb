@@ -12,7 +12,7 @@ body{
 }
 /* aside */
 .aside{
-    width: 15%;
+    width: 20%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -21,24 +21,37 @@ body{
 }
 .icon-aside{  
     width: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
-.icon-aside div img{
-    width: 40%;
+.cont-icon img{
+    width: 36px;  
     margin-top: 10px;
     margin-bottom: 5px;
 }
+.logo-small{
+    width: 36px;
+    margin-top: 10px;
+}
 .logo-big{
     display: none;
+    width: 90px;
+    height: 80px;
+    
 }
 .cont-icon{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .cont-icon a{
     display: none;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
 }
 .list{
     overflow-y: auto;
@@ -72,16 +85,19 @@ body{
 .list ul li{
     color: rgba(125,127,132,255);
     padding: 8px 0;
-    font-size: 0.7em;
+    font-size: 1em;
     list-style-type: none;
+    
 }
 .icon-aside-bot{
     width: 100%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
-    overflow-y: auto;
+    justify-content: flex-end;
+    overflow-y: hidden;
 }
 .circle{
     height: 20px;
@@ -94,15 +110,11 @@ body{
     vertical-align: middle;
     line-height: 20px;
 }
-.profilo{
-    width: 30px;
-    height: 30px;
-    background-color: gray;
-    border-radius: 50%;
-}
+
 .profilo img{
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
+    background-color: gray;
     border-radius: 50%;
 }
 .cont-profilo{
@@ -111,6 +123,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10px 0;
+    overflow-y: hidden;
 }
 .cont-profilo a{
     text-decoration: none;
@@ -127,7 +140,7 @@ body{
 /* MAIN + HEADER*/
 .cont-centrale{
     height: 100%;
-    width: 85%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column    
@@ -135,7 +148,7 @@ body{
 /* HEADER */
 header{
  height: 8vh;
- width: 85%;
+ width: 80%;
  position: fixed;
  z-index: 1;
  background-color: rgba(8,11,18,255);
@@ -302,6 +315,14 @@ footer{
     justify-content: center;
     padding: 0 5px;
 }
+.nome-brano div{
+    display: flex;
+    flex-direction: column;
+   
+}
+.nome-brano div span{
+    align-self: baseline;
+}
 .nome-brano span{
     font-size: 0.6em;
     color: rgba(125,127,132,255);
@@ -407,3 +428,108 @@ input[type='range'] {
     font-size: 0.6em;
 }
 /* FOOTER */
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 767px){
+.aside{
+    padding-left: 10px;
+}
+ .logo-big{
+        display:inline-block;
+        width: 90%; 
+        
+    }
+.logo-small{
+        display: none;
+    }
+.icon-aside{
+        align-items: flex-start;
+       
+    }
+.cont-icon a{
+        display: inline-block;
+    }
+.list{
+        display: block;
+    }
+.cont-profilo a,
+.cont-profilo h4{
+    display: flex;
+    font-size: 1.2em;
+    justify-content: flex-start;
+}
+.icon-aside-bot{
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+   
+}
+.cont-profilo{
+    width: 90%;
+    justify-content: flex-start;
+}
+.bordo{
+    padding-bottom: 20px;
+    border-bottom: 3px solid  rgba(90,90,90,255);}
+.playlist li{
+    font-size: 1.8em;
+}
+.row h2{
+    font-size: 1.8em;
+}
+.row h5{
+    font-size: 1.2em;
+}
+.row span{
+    font-size: 1.2em;
+}
+.row .subtitle{
+    font-size: 1.4em;
+}
+.button{
+    font-size: 1.3em;
+}
+.sinister img{
+    height: 70%;
+}
+.nome-brano{
+    font-size: 1.6em;
+    
+}
+.icon-footer i{
+    font-size: 1.3em;
+    padding-bottom: 5px;
+}
+.nome-brano div{
+    flex-direction: row;
+
+}
+.nome-brano div span{
+    padding-right: 5px;
+}
+.icon-play i{
+    font-size: 1.5em;
+    
+}
+.play{
+    width: 40px;
+    height: 40px;
+    line-height: 45px; 
+}
+.margin{
+    padding: 10px;
+}
+.volume{
+    font-size: 1.6em;
+}
+.range{
+    width: 200px;
+}
+.menu-right{
+    font-size: 1.8em;
+} 
+.vol2{
+    width: 80%;
+} 
+}
