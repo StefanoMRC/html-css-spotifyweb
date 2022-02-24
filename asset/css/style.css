@@ -397,7 +397,7 @@ footer{
     width: 100%;
 }
 .range{
-    width: 80%;
+    width: 30%;
     height: 5px;
     margin: 0 5px;
 }
@@ -669,6 +669,9 @@ input[type='range'] {
     .vol2{
         width: 80%;
     } 
+    .vol-2:hover{
+        cursor: pointer;
+    }
     .list a:hover{
         color: white;
     }
