@@ -700,3 +700,176 @@ input[type='range'] {
         cursor: pointer;
     }
     }
+    @media screen and (min-width: 1800px){
+        .aside{
+            padding-left: 10px;
+        }
+         .logo-big{
+                display:inline-block;
+                width: 70%; 
+                
+            }
+        .logo-small{
+                display: none;
+            }
+        .icon-aside{
+                align-items: flex-start;
+            }
+        .cont-icon a{
+                display: inline-block;
+                font-size: 1.5em;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+        .cont-icon img{
+            transform: scale(130%);
+        }    
+        .list{
+                display: block;
+                font-size: 1.2em;
+            }
+        .list h4{
+            font-size: 1.8em;
+        }
+
+        .cont-profilo a,
+        .cont-profilo h4{
+            display: flex;
+            font-size: 1.8em;
+            justify-content: flex-start;
+        }
+        .icon-aside-bot{
+            align-items: flex-start;
+            justify-content: flex-end;
+            width: 100%;
+           
+        }
+        .cont-profilo{
+            width: 90%;
+            justify-content: flex-start;
+        }
+        .bordo{
+            padding-bottom: 20px;
+            border-bottom: 3px solid  rgba(90,90,90,255);}
+        .playlist li a{
+            font-size: 1em;
+            padding: 0px 10px;
+        }
+        .playlist li{
+            margin: 30px 0;
+        }
+        .row h2{
+            font-size: 2,5em;
+        }
+        .row h5{
+            font-size: 1.2em;
+        }
+        .row span{
+            font-size: 1.2em;
+        }
+        .row .subtitle{
+            font-size: 1.8em;
+        }
+        .cards{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .card{
+            width: calc((100%/6) - 40px);
+            margin: 10px 15px;
+            text-align: center;
+        }
+        .button{
+            font-size: 1.3em;
+        }
+        .sinister img{
+            height: 80%;
+        }
+        .nome-brano{
+            font-size: 1.9em;
+            
+        }
+        .icon-footer{
+            flex-direction: row;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .nome-brano span{
+            flex-direction: row;
+        }
+        .icon-footer i{
+            font-size: 1.3em;
+            padding: 0 10px;
+            
+        }
+        .nome-brano div{
+            flex-direction: row;
+        
+        }
+        .nome-brano div span{
+            padding-right: 5px;
+        }
+        .icon-play i{
+            font-size: 2.3em;
+            
+        }
+    
+        .margin{
+            padding: 0 30px;
+        }
+        .volume{
+            font-size: 1.6em;
+        }
+        .range{
+            width: 500px;
+        }
+        .range:hover{
+            cursor: pointer;
+        }
+        input[type='range']::-webkit-slider-thumb {
+            width: 5px;
+            -webkit-appearance: none;
+            height: 10px;
+            cursor: ew-resize;
+            background: rgba(193,193,193,255);
+            box-shadow: -500px 0 0 500px rgba(193,193,193,255);
+          }
+        .menu-right i{
+            font-size: 1em;
+        } 
+        .vol2{
+            width: 80%;
+        } 
+        .vol-2:hover{
+            cursor: pointer;
+        }
+        .list a:hover{
+            color: white;
+        }
+        .card:hover .cover{
+            display: flex;
+        }
+        .card:hover .cover-2{
+            display: flex;
+        }
+        .playlist li a:hover{
+            color: white;
+        }
+        .button:hover{
+            transform: scale(110%);
+        }
+        .icon-play i:hover{
+            transform: scale(120%);
+            cursor: pointer;
+        }
+        .fa-bars:hover{
+            transform: scale(120%);
+            cursor: pointer;
+        }
+        .fa-desktop:hover{
+            transform: scale(120%);
+            cursor: pointer;
+        }
+        }
