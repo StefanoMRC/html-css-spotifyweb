@@ -145,7 +145,7 @@ body{
 .cont-centrale{
     height: calc(100vh - 70px);
     width: 80%;
-    margin: auto;
+    
     display: flex;
     flex-direction: column    
 }
@@ -705,8 +705,9 @@ input[type='range'] {
             padding-left: 10px;
             width: 15%;
         }
-        .header{
+        header{
             width: 85%;
+         
         }
         .cont-centrale{
             width: 85%;
